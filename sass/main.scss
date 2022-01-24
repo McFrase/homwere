@@ -67,8 +67,8 @@ footer {
   font-weight: bold;
 
   @media screen and (max-width: 768px) {
-    font-size: 32px;
-    line-height: 50px;
+    font-size: 28px;
+    line-height: 1.4;
   }
 }
 
@@ -302,6 +302,12 @@ footer {
     font-size: 32px;
     margin-bottom: 30px;
     color: $lightColor;
+
+    @media screen and (max-width: 768px) {
+      font-size: 22px;
+      color: $mainThemeColor;
+      margin-bottom: 20px;
+    }
   }
 
   .footerList {
