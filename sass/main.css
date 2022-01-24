@@ -108,23 +108,17 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 12.5px 40px;
   border-radius: 50px;
   background-color: rgba(207, 207, 207, 0.3);
-  margin: 20px;
-}
-
-.tag .text {
-  margin-left: 10px;
+  margin: 20px 0;
 }
 
 @media screen and (max-width: 768px) {
   .tag {
-    padding: 12.5px 20px;
-    margin: 8px;
+    padding: 12.5px 10px;
   }
 }
 

@@ -114,19 +114,18 @@ footer {
 .tag {
   display: inline-flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 12.5px 40px;
   border-radius: 50px;
   background-color: rgba(207, 207, 207, 0.3);
-  margin: 20px;
+  margin: 20px 0;
 
-  .text {
-    margin-left: 10px;
-  }
+  //   .text {
+  //     margin-left: 5px;
+  //   }
 
   @media screen and (max-width: 768px) {
-    padding: 12.5px 20px;
-    margin: 8px;
+    padding: 12.5px 10px;
   }
 }
 
