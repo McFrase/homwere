@@ -32,13 +32,13 @@ footer {
 .customBtn {
   background: #180443;
   color: #fff;
-  padding: 18px 30px;
+  padding: 18px 20px;
   margin: 10px 0;
 }
 
 @media screen and (max-width: 768px) {
   .customBtn {
-    padding: 22px 20px;
+    padding: 22px 15px;
   }
 }
 
@@ -62,8 +62,8 @@ footer {
   color: #5b5b5b;
 }
 
-#hero .row {
-  min-height: 100vh;
+#hero .row:nth-child(1) {
+  min-height: 80vh;
 }
 
 .lottie {
@@ -211,25 +211,28 @@ footer {
 
 #roadmap .row .bodyCopy {
   color: #fff;
+  font-size: 14px;
 }
 
 #roadmap .timeline {
-  width: 80%;
+  width: 100%;
   height: 100%;
   max-width: 100%;
   margin: 0 auto;
   position: relative;
 }
 
-#roadmap .timeline::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 2px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background-color: #fff;
+@media screen and (min-width: 768px) {
+  #roadmap .timeline::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    background-color: #fff;
+  }
 }
 
 #roadmap .timeline ul {
@@ -237,7 +240,7 @@ footer {
 }
 
 #roadmap .timeline ul li {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 #roadmap .timeline ul li .timelineContent {
@@ -247,13 +250,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-@media screen and (max-width: 768px) {
-  #roadmap .timeline ul li .timelineContent {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
 }
 
 #roadmap .timeline ul li .timelineContent .text {
@@ -312,7 +308,7 @@ footer .footerTitle {
 
 footer .footerList {
   list-style: none;
-  text-indent: -18%;
+  padding-left: 0;
 }
 
 footer .footerList li {
@@ -334,6 +330,18 @@ footer .social-container {
           align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  footer .social-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+  }
+}
+
 footer .social {
   list-style: none;
   display: -webkit-box;
@@ -345,5 +353,6 @@ footer .social {
   width: 60%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding-left: 0;
 }
 /*# sourceMappingURL=main.css.map */
