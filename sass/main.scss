@@ -54,6 +54,13 @@ footer {
   }
 }
 
+.subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: $mainThemeColor;
+}
+
 .title {
   font-size: 48px;
   line-height: 68px;
