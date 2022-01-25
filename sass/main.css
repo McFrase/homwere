@@ -252,6 +252,13 @@ nav .container .navContainer .navList .nav-item .nav-link {
   }
 }
 
+@media screen and (max-width: 1400px) {
+  .lottie {
+    width: 100%;
+    height: auto;
+  }
+}
+
 #products {
   background: #180443;
 }
