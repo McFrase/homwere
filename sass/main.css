@@ -575,4 +575,29 @@ footer .social {
       justify-content: space-around;
   padding-left: 0;
 }
+
+#comingSoon + .row:nth-child(1) {
+  min-height: 100vh;
+}
+
+#comingSoon .title {
+  font-size: 64px;
+  text-transform: capitalize;
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 768px) {
+  #comingSoon .title {
+    font-size: 32px;
+  }
+}
+
+#comingSoon #goBack {
+  font-size: 14px;
+  color: #5e36b5;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: bold;
+  text-decoration: none;
+}
 /*# sourceMappingURL=main.css.map */

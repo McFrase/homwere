@@ -515,3 +515,28 @@ footer {
     padding-left: 0;
   }
 }
+
+#comingSoon {
+  + .row {
+    &:nth-child(1) {
+      min-height: 100vh;
+    }
+  }
+  .title {
+    font-size: 64px;
+    text-transform: capitalize;
+    line-height: 1.4;
+
+    @media screen and (max-width: 768px) {
+      font-size: 32px;
+    }
+  }
+  #goBack {
+    font-size: 14px;
+    color: $mainThemeColor;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
