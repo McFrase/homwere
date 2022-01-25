@@ -222,6 +222,13 @@ nav .container .navContainer .navList .nav-item .nav-link {
   }
 }
 
+@media screen and (max-width: 1400px) {
+  .title {
+    font-size: 34px;
+    line-height: 1.4;
+  }
+}
+
 .bodyCopy {
   font-size: 16px;
   font-weight: 400;
