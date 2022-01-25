@@ -13,6 +13,10 @@ body {
   font-family: "Verdana", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 section,
 footer {
   padding: 7rem 0;
