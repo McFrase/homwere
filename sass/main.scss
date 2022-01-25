@@ -46,15 +46,82 @@ nav {
   position: sticky;
   top: 0;
   z-index: 10;
+  // overflow: hidden;
 
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 100%;
+    position: relative;
+
+    .bars {
+      display: none;
+      width: 44px;
+      height: 44px;
+      position: relative;
+      z-index: 30;
+      cursor: pointer;
+      transition: 0.3s linear;
+
+      &.active {
+        span {
+          &:nth-child(odd) {
+            transform-origin: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+            width: 65%;
+            position: absolute;
+          }
+
+          &:nth-child(even) {
+            transform-origin: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            width: 65%;
+            position: absolute;
+          }
+        }
+      }
+
+      span {
+        position: absolute;
+        background-color: $lightColor;
+        height: 3px;
+        transition: 0.3s linear;
+
+        &:nth-child(odd) {
+          width: 20px;
+          left: 12px;
+          top: 17px;
+        }
+
+        &:nth-child(even) {
+          width: 24px;
+          left: 10px;
+          bottom: 17px;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        display: flex;
+      }
+    }
 
     .navContainer {
       height: 100%;
+      background-color: $mainThemeColor;
+
+      @media screen and (max-width: 768px) {
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 100%;
+        bottom: 0;
+        z-index: 20;
+      }
       .navList {
         height: 100%;
         display: flex;
@@ -63,12 +130,22 @@ nav {
         list-style: none;
         padding-left: 0;
 
+        @media screen and (max-width: 768px) {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+
         .nav-item {
           .nav-link {
             color: $lightColor;
             text-decoration: none;
             text-transform: uppercase;
             font-size: 18px;
+
+            @media screen and (max-width: 768px) {
+              font-size: 24px;
+            }
           }
         }
       }
@@ -139,7 +216,7 @@ nav {
   }
 }
 
-#benefits {
+#products {
   background: $mainThemeColor;
 }
 

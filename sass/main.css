@@ -46,10 +46,85 @@ nav .container {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100%;
+  position: relative;
+}
+
+nav .container .bars {
+  display: none;
+  width: 44px;
+  height: 44px;
+  position: relative;
+  z-index: 30;
+  cursor: pointer;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+nav .container .bars.active span:nth-child(odd) {
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+  width: 65%;
+  position: absolute;
+}
+
+nav .container .bars.active span:nth-child(even) {
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+  width: 65%;
+  position: absolute;
+}
+
+nav .container .bars span {
+  position: absolute;
+  background-color: #fff;
+  height: 3px;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+nav .container .bars span:nth-child(odd) {
+  width: 20px;
+  left: 12px;
+  top: 17px;
+}
+
+nav .container .bars span:nth-child(even) {
+  width: 24px;
+  left: 10px;
+  bottom: 17px;
+}
+
+@media screen and (max-width: 768px) {
+  nav .container .bars {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 nav .container .navContainer {
   height: 100%;
+  background-color: #5e36b5;
+}
+
+@media screen and (max-width: 768px) {
+  nav .container .navContainer {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    bottom: 0;
+    z-index: 20;
+  }
 }
 
 nav .container .navContainer .navList {
@@ -67,11 +142,32 @@ nav .container .navContainer .navList {
   padding-left: 0;
 }
 
+@media screen and (max-width: 768px) {
+  nav .container .navContainer .navList {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 nav .container .navContainer .navList .nav-item .nav-link {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  nav .container .navContainer .navList .nav-item .nav-link {
+    font-size: 24px;
+  }
 }
 
 .container {
@@ -141,7 +237,7 @@ nav .container .navContainer .navList .nav-item .nav-link {
   }
 }
 
-#benefits {
+#products {
   background: #5e36b5;
 }
 
