@@ -39,6 +39,43 @@ footer {
   }
 }
 
+nav {
+  padding: 1rem 0;
+  background-color: $mainThemeColor;
+  height: 10vh;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+
+    .navContainer {
+      height: 100%;
+      .navList {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        padding-left: 0;
+
+        .nav-item {
+          .nav-link {
+            color: $lightColor;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
 .container {
   padding: 0 30px;
 }
@@ -79,10 +116,10 @@ footer {
   color: #5b5b5b;
 }
 
-#hero {
+#home {
   .row {
     &:nth-child(1) {
-      min-height: 80vh;
+      min-height: 70vh;
     }
   }
 }

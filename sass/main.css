@@ -25,6 +25,55 @@ footer {
   }
 }
 
+nav {
+  padding: 1rem 0;
+  background-color: #5e36b5;
+  height: 10vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+nav .container .navContainer {
+  height: 100%;
+}
+
+nav .container .navContainer .navList {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  padding-left: 0;
+}
+
+nav .container .navContainer .navList .nav-item .nav-link {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
 .container {
   padding: 0 30px;
 }
@@ -69,8 +118,8 @@ footer {
   color: #5b5b5b;
 }
 
-#hero .row:nth-child(1) {
-  min-height: 80vh;
+#home .row:nth-child(1) {
+  min-height: 70vh;
 }
 
 .lottie {
