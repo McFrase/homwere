@@ -246,10 +246,8 @@ nav {
   .row {
     min-height: 70vh;
 
-    @media screen and (max-width: 1400px) {
-      .margin {
-        margin: 1.5rem 0;
-      }
+    .margin {
+      margin: 1.8rem 0;
     }
   }
 

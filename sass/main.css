@@ -274,10 +274,8 @@ nav .container .navContainer .navList .nav-item .nav-link {
   min-height: 70vh;
 }
 
-@media screen and (max-width: 1400px) {
-  #products .row .margin {
-    margin: 1.5rem 0;
-  }
+#products .row .margin {
+  margin: 1.8rem 0;
 }
 
 #products .title,
