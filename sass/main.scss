@@ -168,9 +168,17 @@ nav {
   color: $lightColor;
   padding: 18px 20px;
   margin: 10px 0;
+  border: 1px solid $secondaryThemeColor;
+  transition: 0.3s linear;
 
   @media screen and (max-width: 768px) {
     padding: 22px 15px;
+  }
+
+  &:hover {
+    color: $mainThemeColor;
+    background-color: $lightColor;
+    border: 1px solid $mainThemeColor;
   }
 }
 

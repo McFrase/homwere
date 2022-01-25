@@ -185,12 +185,21 @@ nav .container .navContainer .navList .nav-item .nav-link {
   color: #fff;
   padding: 18px 20px;
   margin: 10px 0;
+  border: 1px solid #180443;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
 
 @media screen and (max-width: 768px) {
   .customBtn {
     padding: 22px 15px;
   }
+}
+
+.customBtn:hover {
+  color: #5e36b5;
+  background-color: #fff;
+  border: 1px solid #5e36b5;
 }
 
 .subtitle {
