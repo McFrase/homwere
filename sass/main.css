@@ -244,7 +244,30 @@ nav .container .navContainer .navList .nav-item .nav-link {
 }
 
 #products {
-  padding: 0;
+  background: #180443;
+}
+
+#products .row {
+  min-height: 70vh;
+}
+
+#products .title,
+#products .bodyCopy {
+  color: #fff;
+}
+
+#products .card {
+  position: relative;
+}
+
+#products .card img {
+  position: absolute;
+  width: 60px;
+  height: auto;
+  top: 0%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 #products .card .card-title {

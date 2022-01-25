@@ -223,10 +223,29 @@ nav {
 }
 
 #products {
-  // background: $secondaryThemeColor;
-  padding: 0;
+  background: $secondaryThemeColor;
+  // padding: 0;
+
+  .row {
+    min-height: 70vh;
+  }
+
+  .title,
+  .bodyCopy {
+    color: $lightColor;
+  }
 
   .card {
+    position: relative;
+
+    img {
+      position: absolute;
+      width: 60px;
+      height: auto;
+      top: 0%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
     .card-title {
       font-size: 42px;
       font-weight: bold;
