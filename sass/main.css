@@ -49,6 +49,10 @@ nav .container {
   position: relative;
 }
 
+nav .container .logo {
+  z-index: 21;
+}
+
 nav .container .bars {
   display: none;
   width: 44px;
@@ -148,12 +152,14 @@ nav .container .navContainer .navList {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-top: 6rem;
+    padding-left: 1.4rem;
   }
 }
 
@@ -161,7 +167,7 @@ nav .container .navContainer .navList .nav-item .nav-link {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 @media screen and (max-width: 768px) {
@@ -238,7 +244,20 @@ nav .container .navContainer .navList .nav-item .nav-link {
 }
 
 #products {
-  background: #5e36b5;
+  padding: 0;
+}
+
+#products .card .card-title {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+#products .card .card-title sub {
+  font-size: 24px;
+}
+
+#products .card .card-text {
+  font-size: 14px;
 }
 
 #listing .row,

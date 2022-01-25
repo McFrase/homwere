@@ -55,6 +55,10 @@ nav {
     height: 100%;
     position: relative;
 
+    .logo {
+      z-index: 21;
+    }
+
     .bars {
       display: none;
       width: 44px;
@@ -132,8 +136,10 @@ nav {
 
         @media screen and (max-width: 768px) {
           flex-direction: column;
-          align-items: center;
-          justify-content: center;
+          align-items: start;
+          justify-content: flex-start;
+          margin-top: 6rem;
+          padding-left: 1.4rem;
         }
 
         .nav-item {
@@ -141,7 +147,7 @@ nav {
             color: $lightColor;
             text-decoration: none;
             text-transform: uppercase;
-            font-size: 18px;
+            font-size: 15px;
 
             @media screen and (max-width: 768px) {
               font-size: 24px;
@@ -217,7 +223,23 @@ nav {
 }
 
 #products {
-  background: $mainThemeColor;
+  // background: $secondaryThemeColor;
+  padding: 0;
+
+  .card {
+    .card-title {
+      font-size: 64px;
+      font-weight: bold;
+
+      sub {
+        font-size: 24px;
+      }
+    }
+
+    .card-text {
+      font-size: 14px;
+    }
+  }
 }
 
 #listing .row,
