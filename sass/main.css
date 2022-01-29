@@ -608,4 +608,9 @@ footer .social {
   font-weight: bold;
   text-decoration: none;
 }
+
+.strike .bodyCopy {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
 /*# sourceMappingURL=main.css.map */
