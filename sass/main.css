@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: "Verdana", sans-serif;
+  font-family: 'Verdana', sans-serif;
 }
 
 html {
@@ -35,8 +35,14 @@ nav {
   height: 10vh;
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  top: 10vh;
   z-index: 10;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    top: 12vh;
+  }
 }
 
 nav .container {
@@ -444,7 +450,7 @@ nav .container .navContainer .navList .nav-item .nav-link {
 
 @media screen and (min-width: 768px) {
   #roadmap .timeline::before {
-    content: "";
+    content: '';
     position: absolute;
     height: 100%;
     width: 2px;
@@ -612,5 +618,61 @@ footer .social {
 .strike .bodyCopy {
   text-decoration: line-through;
   opacity: 0.5;
+}
+
+#timersection {
+  padding: 1.4rem 0;
+  background: #180443;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+}
+
+.timer-wrapper {
+  width: 70%;
+}
+
+@media screen and (max-width: 768px) {
+  .timer-wrapper {
+    width: 100%;
+  }
+}
+
+.timer {
+  position: relative;
+  width: 20%;
+  height: auto;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  display: inline-block;
+}
+
+.timer:before {
+  content: '';
+  position: absolute;
+  bottom: -80%;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 200;
+}
+
+.timer#day::before {
+  content: 'Days';
+}
+
+.timer#hour::before {
+  content: 'Hours';
+}
+
+.timer#minute::before {
+  content: 'Minutes';
+}
+
+.timer#second::before {
+  content: 'Seconds';
 }
 /*# sourceMappingURL=main.css.map */

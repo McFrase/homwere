@@ -1,5 +1,5 @@
-@import url("/fonts/verdana/verdana.ttf");
-@import url("/fonts/verdana/Verdana\ Bold.ttf");
+@import url('/fonts/verdana/verdana.ttf');
+@import url('/fonts/verdana/Verdana\ Bold.ttf');
 
 $mainThemeColor: #5e36b5;
 $secondaryThemeColor: #180443;
@@ -15,7 +15,7 @@ $dark: #000;
 }
 
 body {
-  font-family: "Verdana", sans-serif;
+  font-family: 'Verdana', sans-serif;
 }
 
 html {
@@ -36,9 +36,12 @@ nav {
   background-color: $mainThemeColor;
   height: 10vh;
   position: sticky;
-  top: 0;
+  top: 10vh;
   z-index: 10;
   // overflow: hidden;
+  @media screen and (max-width: 768px) {
+    top: 12vh;
+  }
 
   .container {
     display: flex;
@@ -397,7 +400,7 @@ nav {
 
     @media screen and (min-width: 768px) {
       &::before {
-        content: "";
+        content: '';
         position: absolute;
         height: 100%;
         width: 2px;
@@ -542,4 +545,57 @@ footer {
     text-decoration: line-through;
     opacity: 0.5;
   }
+}
+
+#timersection {
+  padding: 1.4rem 0;
+  background: $secondaryThemeColor;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+}
+
+.timer-wrapper {
+  width: 70%;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.timer {
+  position: relative;
+  width: 20%;
+  height: auto;
+  text-align: center;
+  color: $lightColor;
+  font-size: 16px;
+  display: inline-block;
+}
+
+.timer:before {
+  content: '';
+  position: absolute;
+  bottom: -80%;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 200;
+}
+
+.timer#day::before {
+  content: 'Days';
+}
+
+.timer#hour::before {
+  content: 'Hours';
+}
+
+.timer#minute::before {
+  content: 'Minutes';
+}
+
+.timer#second::before {
+  content: 'Seconds';
 }
